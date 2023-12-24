@@ -4,12 +4,33 @@
         <title>EliseoZT2005</title>
         <link rel="icon" href="img/icon.ico">
         <link rel="stylesheet" href="style.css">
-        <script src="scrip.js"></script>
+        <script src="script.js"></script>
+        <script src="typed.umd.js"></script>
     </head>
     <body>
-        <div class="table1">
         <h1 class="title">EliseoZT2005</h1>
+        <h2 class="bio">Desarrollador<br><span id="element"></span></h2>
         <img class="profile" src="img/profile.jpg">
-        </div>
+        <script>
+            var typed = new Typed('#element', {
+              strings: [
+              '<i class="dev">Apps Android</i>',
+              '<i class="dev">Custom Roms</i>',
+              '<i class="dev">Paginas Web</i>'
+            ],
+              //stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	          typeSpeed: 150, // Velocidad en mlisegundos para poner una letra,
+	          startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	          backSpeed: 150, // Velocidad en milisegundos para borrrar una letra,
+	          //smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	          shuffle: true, // Alterar el orden en el que escribe las palabras.
+	          backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+	          loop: true, // Repetir el array de strings
+	          loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	          showCursor: true, // Mostrar cursor palpitanto
+	          cursorChar: '|', // Caracter para el cursor
+	          contentType: 'html', // 'html' o 'null' para texto sin formato
+            });
+        </script>
     </body>
 </html>
