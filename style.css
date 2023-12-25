@@ -1,5 +1,9 @@
 .body {
     background-color: #00ffaa;
+    margin-top: 100%;
+    margin-bottom: 100%;
+    border-bottom: 100%;
+    border: 5px solid #000000;
 }
 
 .title {
