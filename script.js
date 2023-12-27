@@ -17,3 +17,21 @@ var typed = new Typed('#element', {
     cursorChar: '|', // Caracter para el cursor
     contentType: 'html', // 'html' o 'null' para texto sin formato
   });
+
+  const body = document.body;
+  const colorButton = document.getElementById('colorButton');
+  
+  function toggleMode() {
+      // Alternamos entre los modos claro y oscuro en el cuerpo
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
+  
+      // Cambiamos el color del botón según el modo actual
+      if (body.classList.contains('dark-mode')) {
+          colorButton.style.backgroundColor = '#666';
+          colorButton.style.color = '#fff';
+      } else {
+          colorButton.style.backgroundColor = '#f0f0f0';
+          colorButton.style.color = '#000';
+      }
+  }

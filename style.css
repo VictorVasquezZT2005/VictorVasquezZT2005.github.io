@@ -1,5 +1,29 @@
-.body {
-    background-color: #00ffaa;
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el modo claro */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para el botón */
+#colorButton {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .title {
