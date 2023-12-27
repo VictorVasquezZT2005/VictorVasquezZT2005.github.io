@@ -18,20 +18,31 @@ var typed = new Typed('#element', {
     contentType: 'html', // 'html' o 'null' para texto sin formato
   });
 
-  const body = document.body;
-  const colorButton = document.getElementById('colorButton');
-  
-  function toggleMode() {
-      // Alternamos entre los modos claro y oscuro en el cuerpo
-      body.classList.toggle('light-mode');
-      body.classList.toggle('dark-mode');
-  
-      // Cambiamos el color del botón según el modo actual
-      if (body.classList.contains('dark-mode')) {
-          colorButton.style.backgroundColor = '#666';
-          colorButton.style.color = '#fff';
-      } else {
-          colorButton.style.backgroundColor = '#f0f0f0';
-          colorButton.style.color = '#000';
-      }
-  }
+const body = document.body;
+
+function toggleMode() {
+    // Alternamos entre los modos claro y oscuro en el cuerpo
+    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
+
+    // Guardamos la preferencia del usuario en localStorage
+    const currentMode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('preferred-mode', currentMode);
+}
+
+// Detectamos la preferencia del sistema operativo del usuario
+const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Configuramos el modo predeterminado según la preferencia del sistema
+if (prefersDarkMode) {
+    body.classList.add('dark-mode');
+} else {
+    body.classList.add('light-mode');
+}
+
+// Si el usuario ya ha interactuado y seleccionado un modo, aplicamos esa preferencia
+const userPreferredMode = localStorage.getItem('preferred-mode');
+if (userPreferredMode) {
+    body.classList.remove('light-mode', 'dark-mode');
+    body.classList.add(userPreferredMode + '-mode');
+}
