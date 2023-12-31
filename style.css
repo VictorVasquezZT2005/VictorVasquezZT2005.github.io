@@ -54,17 +54,36 @@ body.dark-mode {
     font-family: "Kaushan Script";
 }
 
-.bio{
-    float: left; /* Mueve el segundo bloque de texto a la izquierda */
-    font-family: Kaushan Script;
+.description {
+    float: left;
+    font-family: "PT Sans";
 }
 
-.dev {
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    font-style: normal;
-    font-family: Kaushan Script;
+.proyects {
+    float: left;
+    font-family: "Kaushan Script";
+}
+
+.descriptionproyects {
+    width: 100%;
+    float: left;
+    font-family: "PT Sans";
+}
+
+.proyect1 {
+    height: auto;
+    width: 10%;
+    float: left;
+    font-family: "PT Sans";
+    text-align: center;
+}
+
+.proyect2 {
+    height: auto;
+    width: 20%;
+    float: center;
+    font-family: "PT Sans";
+    text-align: center;
 }
 
 .profile {
