@@ -72,6 +72,22 @@ body.dark-mode {
     font-family: "PT Sans";
 }
 
+.proyect1 {
+    height: auto;
+    width: 10%;
+    float: left;
+    font-family: "PT Sans";
+    text-align: center;
+}
+
+.proyect2 {
+    height: auto;
+    width: 20%;
+    float: center;
+    font-family: "PT Sans";
+    text-align: center;
+}
+
 .profile {
     float: right; /* Mueve la imagen a la derecha */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
