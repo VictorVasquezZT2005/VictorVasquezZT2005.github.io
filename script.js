@@ -75,7 +75,7 @@ function changeButtonColor() {
 }
 
 function changeIconColor() {
-    icon.style.color = body.classList.contains('dark-mode') ? '#C5EDF5' : '#001C63';
+    icon.style.color = body.classList.contains('dark-mode') ? '#8FFF85' : '#0B0A47';
 }
 
 function updateMenuStyles() {

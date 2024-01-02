@@ -7,14 +7,14 @@ body {
 
 /* Estilos para el modo claro */
 body.light-mode {
-    background-color: #C5EDF5;
-    color: #001C63;
+    background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
+    color: #0B0A47;
 }
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-    background-color: #001C63;
-    color: #C5EDF5;
+    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
+    color: #8FFF85;
 }
 
 /* Estilo para el botón */
@@ -51,47 +51,24 @@ body.dark-mode {
 }
 
 .title {
-    float: left; /* Mueve el texto a la izquierda */
+    text-align: left;
     margin-right: 20px;
     font-family: "Kaushan Script";
 }
 
 .description {
-    float: left;
+    text-align: left;
     font-family: "PT Sans";
 }
 
-.proyects {
-    float: left;
-    font-family: "Kaushan Script";
-}
-
-.descriptionproyects {
-    width: 100%;
-    float: left;
-    font-family: "PT Sans";
-}
-
-.proyect1 {
-    height: auto;
-    width: 10%;
-    float: left;
-    font-family: "PT Sans";
-    text-align: center;
-}
-
-.proyect2 {
-    height: auto;
-    width: 20%;
-    float: center;
-    font-family: "PT Sans";
-    text-align: center;
-}
-
-.profile {
-    float: right; /* Mueve la imagen a la derecha */
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+.device {
+    width: 33%;
+    position: relative;
+    display: -ms-flexbox;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
 }
 
 img {
@@ -115,12 +92,12 @@ img {
 
 /* Estilos para el menú en tema claro */
 .light-mode li a {
-    color: #001C63;
+    color: #0B0A47;
 }
 
 /* Estilos para el menú en tema oscuro */
 .dark-mode li a {
-    color: #C5EDF5;
+    color: #8FFF85;
 }
 
 /* Estilos generales para el menú */

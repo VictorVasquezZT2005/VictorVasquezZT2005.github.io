@@ -7,14 +7,14 @@ body {
 
 /* Estilos para el modo claro */
 body.light-mode {
-    background-color: #C5EDF5;
-    color: #001C63;
+    background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
+    color: #0B0A47;
 }
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-    background-color: #001C63;
-    color: #C5EDF5;
+    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
+    color: #8FFF85;
 }
 
 /* Estilo para el botón */
@@ -61,17 +61,6 @@ body.dark-mode {
     font-family: "PT Sans";
 }
 
-.proyects {
-    float: left;
-    font-family: "Kaushan Script";
-}
-
-.descriptionproyects {
-    width: 100%;
-    float: left;
-    font-family: "PT Sans";
-}
-
 .profile {
     float: right; /* Mueve la imagen a la derecha */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
@@ -99,12 +88,12 @@ img {
 
 /* Estilos para el menú en tema claro */
 .light-mode li a {
-    color: #001C63;
+    color: #0B0A47;
 }
 
 /* Estilos para el menú en tema oscuro */
 .dark-mode li a {
-    color: #C5EDF5;
+    color: #8FFF85;
 }
 
 /* Estilos generales para el menú */
