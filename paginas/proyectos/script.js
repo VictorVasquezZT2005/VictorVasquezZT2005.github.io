@@ -75,7 +75,7 @@ function changeButtonColor() {
 }
 
 function changeIconColor() {
-    icon.style.color = body.classList.contains('dark-mode') ? '#8FFF85' : '#0B0A47';
+    icon.style.color = body.classList.contains('dark-mode') ? '#EAEAEA' : '#181818';
 }
 
 function updateMenuStyles() {
@@ -84,4 +84,24 @@ function updateMenuStyles() {
 
     // Agregamos la clase correspondiente al tema actual en cada enlace del menú
     liLinks.forEach(link => link.classList.add(body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode'));
+}
+
+function seleccionarElemento(elemento) {
+    // Remover la clase 'selected' de todos los elementos
+    var lista = document.getElementById('miLista');
+    var elementos = lista.getElementsByClassName('elemento');
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].classList.remove('selected');
+    }
+
+    // Agregar la clase 'selected' al elemento clicado
+    elemento.classList.add('selected');
+}
+
+function seleccionarElemento(elemento) {
+    // Obtén la URL del atributo data
+    var url = elemento.getAttribute('data-url');
+
+    // Abre la URL en la misma ventana
+    window.location.href = url;
 }

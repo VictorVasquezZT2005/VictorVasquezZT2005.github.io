@@ -7,14 +7,14 @@ body {
 
 /* Estilos para el modo claro */
 body.light-mode {
-    background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
-    color: #0B0A47;
+    background-color: #EAEAEA;
+    color: #181818;
 }
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
-    color: #8FFF85;
+    background-color: #181818;
+    color: #EAEAEA;
 }
 
 /* Estilo para el botón */
@@ -88,12 +88,12 @@ img {
 
 /* Estilos para el menú en tema claro */
 .light-mode li a {
-    color: #0B0A47;
+    color: #181818;
 }
 
 /* Estilos para el menú en tema oscuro */
 .dark-mode li a {
-    color: #8FFF85;
+    color: #EAEAEA;
 }
 
 /* Estilos generales para el menú */

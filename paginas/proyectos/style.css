@@ -7,14 +7,14 @@ body {
 
 /* Estilos para el modo claro */
 body.light-mode {
-    background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
-    color: #0B0A47;
+    background-color: #EAEAEA;
+    color: #181818;
 }
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
-    color: #8FFF85;
+    background-color: #181818;
+    color: #EAEAEA;
 }
 
 /* Estilo para el botón */
@@ -61,16 +61,6 @@ body.dark-mode {
     font-family: "PT Sans";
 }
 
-.device {
-    width: 33%;
-    position: relative;
-    display: -ms-flexbox;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: transparent;
-    background-clip: border-box;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -92,12 +82,12 @@ img {
 
 /* Estilos para el menú en tema claro */
 .light-mode li a {
-    color: #0B0A47;
+    color: #181818;
 }
 
 /* Estilos para el menú en tema oscuro */
 .dark-mode li a {
-    color: #8FFF85;
+    color: #EAEAEA;
 }
 
 /* Estilos generales para el menú */
@@ -124,3 +114,52 @@ li a {
     text-decoration: none;
     font-family: "Kaushan Script";
 }
+
+.lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.elemento {
+    font-family: "Kaushan Script";
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.elemento:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para el tema claro */
+.light-mode .elemento {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+
+  .light-mode .elemento:hover {
+    background-color: #e0e0e0;
+  }
+
+  .light-mode .selected {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  /* Estilos para el tema oscuro */
+  .dark-mode .elemento {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .dark-mode .elemento:hover {
+    background-color: #555;
+  }
+
+  .dark-mode .selected {
+    background-color: #4caf50;
+    color: white;
+  }
