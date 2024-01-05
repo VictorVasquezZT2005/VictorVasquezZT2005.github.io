@@ -34,20 +34,22 @@ body.dark-mode {
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 #icon {
     font-size: 24px;
-    transition: color 0.3s ease; /* Transición para suavizar el cambio de color */
+    transition: color 0.3s ease;
+    /* Transición para suavizar el cambio de color */
 }
 
 /* Estilo para la imagen */
 #imageElement {
-    transition: border-color 0.3s ease; /* Transición para suavizar el cambio de color del margen */
+    transition: border-color 0.3s ease;
+    /* Transición para suavizar el cambio de color del margen */
 }
 
 .title {
@@ -149,7 +151,7 @@ li a {
     color: white;
 }
 
-  /* Estilos para el tema oscuro */
+/* Estilos para el tema oscuro */
 .dark-mode .elemento {
     background-color: #333;
     color: #fff;

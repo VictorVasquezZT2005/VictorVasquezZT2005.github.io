@@ -34,20 +34,22 @@ body.dark-mode {
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 #icon {
     font-size: 24px;
-    transition: color 0.3s ease; /* Transición para suavizar el cambio de color */
+    transition: color 0.3s ease;
+    /* Transición para suavizar el cambio de color */
 }
 
 /* Estilo para la imagen */
 #imageElement {
-    transition: border-color 0.3s ease; /* Transición para suavizar el cambio de color del margen */
+    transition: border-color 0.3s ease;
+    /* Transición para suavizar el cambio de color del margen */
 }
 
 .title {
@@ -138,28 +140,28 @@ li a {
 .light-mode .elemento {
     background-color: #f0f0f0;
     color: #000;
-  }
+}
 
-  .light-mode .elemento:hover {
+.light-mode .elemento:hover {
     background-color: #e0e0e0;
-  }
+}
 
-  .light-mode .selected {
+.light-mode .selected {
     background-color: #4caf50;
     color: white;
-  }
+}
 
-  /* Estilos para el tema oscuro */
-  .dark-mode .elemento {
+/* Estilos para el tema oscuro */
+.dark-mode .elemento {
     background-color: #333;
     color: #fff;
-  }
+}
 
-  .dark-mode .elemento:hover {
+.dark-mode .elemento:hover {
     background-color: #555;
-  }
+}
 
-  .dark-mode .selected {
+.dark-mode .selected {
     background-color: #4caf50;
     color: white;
-  }
+}
